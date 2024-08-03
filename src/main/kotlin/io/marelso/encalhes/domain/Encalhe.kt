@@ -3,10 +3,11 @@ package io.marelso.encalhes.domain
 import java.time.LocalDate
 
 data class Encalhe(
-    val id: String,
+    val id: String? = null,
     val city: City,
-    val from: LocalDate,
-    val to: LocalDate,
-    val limit: LocalDate,
-    val hasArrived: Boolean
+    val from: LocalDate? = null,
+    val to: LocalDate? = null,
+    val limit: LocalDate? = null,
+    val dateRange: String? = null,
+    val hasArrived: Boolean? = null
 )
