@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface EncalheRepository: MongoRepository<Encalhe, String> {
+    fun findAllByHasArrivedTrue(): List<Encalhe>
+    fun findAllByHasArrivedFalse(): List<Encalhe>
 }
