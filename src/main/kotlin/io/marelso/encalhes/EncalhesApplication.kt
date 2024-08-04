@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.mongo.MongoReactiveAutoConfigurati
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude = [MongoReactiveAutoConfiguration::class])
 class EncalhesApplication
 
 fun main(args: Array<String>) {
