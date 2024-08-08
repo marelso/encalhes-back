@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 class WebConfig : WebMvcConfigurer {
     override fun addCorsMappings(corsRegistry: CorsRegistry) {
         corsRegistry.addMapping("/**")
-            .allowedOrigins("*")
+            .allowedOrigins("127.0.0.1:5500")
             .allowedMethods("*")
             .maxAge(3600L)
             .allowedHeaders("*")
